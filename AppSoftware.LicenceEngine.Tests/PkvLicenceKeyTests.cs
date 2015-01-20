@@ -10,7 +10,7 @@ namespace AppSoftware.LicenceEngine.Tests
     public class PkvLicenceKeyTests
     {
         [Test]
-        public void Test_PKV_licence_key_generation_and_verification()
+        public void Test_pkv_licence_key_generation_and_verification()
         {
             var pkvLicenceKey = new PkvLicenceKeyGenerator();
 

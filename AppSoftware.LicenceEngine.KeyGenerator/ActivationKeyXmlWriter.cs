@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Xml;
 using System.IO;
-using AppSoftware.LicenceEngine.Common;
 
 
 namespace AppSoftware.LicenceEngine.KeyGenerator
