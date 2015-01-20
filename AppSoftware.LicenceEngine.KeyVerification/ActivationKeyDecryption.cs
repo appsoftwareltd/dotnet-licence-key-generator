@@ -24,8 +24,7 @@ namespace AppSoftware.LicenceEngine.KeyVerification
             // trying to guess a password by enumerating all possible words. 
 
             PasswordDeriveBytes pdb = new PasswordDeriveBytes(password,
-                new byte[] {0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 
-            0x64, 0x76, 0x65, 0x64, 0x65, 0x76});
+                new byte[] {0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76});
 
             // Now get the key/IV and do the decryption using
             // the function that accepts byte arrays. 

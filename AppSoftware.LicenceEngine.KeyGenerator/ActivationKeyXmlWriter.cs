@@ -8,10 +8,6 @@ using AppSoftware.LicenceEngine.Common;
 
 namespace AppSoftware.LicenceEngine.KeyGenerator
 {
-    // GB 2013/05/09 - Activation Key File functionality is not used in installer
-    // or program execution as it complicates install, and utilisation of this tool.
-    // Class made internal so as not to expose as part of API
-
     /// <summary>
     /// ActivationKeyXmlWriter allows us to create an xml that can be written to a file and parsed
     /// by the licence engine key generator to decide if the running version is properly licenced.

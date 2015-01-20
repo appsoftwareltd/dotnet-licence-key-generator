@@ -44,8 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActivationKeyFileGeneratorTests.cs" />
-    <Compile Include="FormsTests.cs" />
     <Compile Include="PkvLicenceKeyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,10 +60,6 @@
       <Project>{79BCD643-1E9B-4A7D-A51E-9B192264B9B3}</Project>
       <Name>AppSoftware.LicenceEngine.KeyVerification</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="TestActivationKeyFiles\AppSoftware.LicenceEngine.Activation.V2_1.xml.invalid" />
-    <None Include="TestActivationKeyFiles\AppSoftware.LicenceEngine.Activation.V2_1.xml.validFull" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

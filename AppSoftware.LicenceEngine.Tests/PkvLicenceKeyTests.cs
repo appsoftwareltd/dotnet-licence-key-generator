@@ -3,7 +3,6 @@ using AppSoftware.LicenceEngine.Common;
 using AppSoftware.LicenceEngine.KeyGenerator;
 using AppSoftware.LicenceEngine.KeyVerification;
 using NUnit.Framework;
-using System.Threading;
 
 namespace AppSoftware.LicenceEngine.Tests
 {

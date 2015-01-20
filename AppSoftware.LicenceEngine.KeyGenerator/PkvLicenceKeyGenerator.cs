@@ -1,4 +1,11 @@
-﻿// Useful articles while creating port
+﻿
+// This Key Generator was built with the assistance of the article linked below (credit to Brandon Staggs). 
+// Brandon Staggs article provided example in Delphi. Some functionality has been ported to C#
+// to create this key generator.
+
+// http://www.brandonstaggs.com/2007/07/26/implementing-a-partial-serial-number-verification-system-in-delphi/
+
+// Delphi -> .NET mapping concept notes
 
 // Delphi shift right http://www.delphibasics.co.uk/RTL.asp?Name=Shr
 // C# Shift right http://www.blackwasp.co.uk/CSharpShiftOperators.aspx
@@ -6,16 +13,11 @@
 // Delphi Decrement - https://www.google.co.uk/search?q=delphi+Dec&oq=delphi+Dec&sugexp=chrome,mod=3&sourceid=chrome&ie=UTF-8
 // C# string to hex http://stackoverflow.com/questions/5426582/turn-byte-into-two-digit-hexadecimal-number-just-using-tostring
 
-// http://www.brandonstaggs.com/2007/07/26/implementing-a-partial-serial-number-verification-system-in-delphi/
-// ported from delphi (Brandon Staggs original credit) 
-
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Xml;
 using AppSoftware.LicenceEngine.Common;
-using AppSoftware.LicenceEngine.KeyVerification;
 
 namespace AppSoftware.LicenceEngine.KeyGenerator
 {
@@ -29,10 +31,6 @@ namespace AppSoftware.LicenceEngine.KeyGenerator
     // call secret and away from the prying eyes of crackers.  Remember: if it’s in your 
     // compiled executable, a cracker can see it!
 
-    /// <summary>
-    /// Cognize Ltd 2013 PKV (Partial Key Verification) implementation in C#
-    /// 
-    /// </summary>
     public class PkvLicenceKeyGenerator
     {
         /// <summary>
@@ -45,29 +43,6 @@ namespace AppSoftware.LicenceEngine.KeyGenerator
         /// <returns></returns>
         public string MakeKey(int seed, KeyByteSet[] keyByteSets)
         {
-            // If the build date has expired, the activation key file needs
-            // to be checked for validity, otherwise it is considered that
-            // the application is being used under a free trial period and
-            // that period has expired.
-
-            if (Config.IsTrialBuild)
-            {
-                if (DateTime.Now > Config.BuildTrialPeriodExpires)
-                {
-                    // 2013/05/09 - Omit key file check, simply use hard coded expiry
-
-                    throw new TrialPeriodExpiredException("The trial period for LicenceEngine.KeyGenerator has expired");
-
-                    //new ActivationKeyFileCheck().CheckActivationKeyFile(
-                    //    AssemblyDirectory + @"\" + "AppSoftware.LicenceEngine.Activation.xml",
-                    //    new KeyByteSet(5, 62, 4, 234),
-                    //    new KeyByteSet(6, 200, 56, 49),
-                    //    "7sda2ajfdg56",
-                    //    "Licence Key Generator"
-                    //);
-                }
-            }
-
             if (keyByteSets.Length < 2)
             {
                 throw new InvalidOperationException("The KeyByteSet array must be of length 2 or greater.");

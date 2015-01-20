@@ -45,13 +45,9 @@
   <ItemGroup>
     <Compile Include="ActivationKeyEncryption.cs" />
     <Compile Include="ActivationKeyXmlWriter.cs" />
-    <Compile Include="Config.cs" />
     <Compile Include="KeyByteSetComparer.cs" />
     <Compile Include="PkvLicenceKeyGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Docs\BrandonStaggsOriginalDelphiCode.zip" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppSoftware.LicenceEngine.Common\AppSoftware.LicenceEngine.Common.csproj">
@@ -65,18 +61,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>ECHO ----------------------------------------------------------
-ECHO ### Running copy out of redistributable files
-ECHO ----------------------------------------------------------
-
-REM Copy AppSoftware binaries and associated xml to redistributable folder
-
-COPY $(SolutionDir)AppSoftware.LicenceEngine.KeyGenerator\bin\Release\AppSoftware.LicenceEngine.Common.dll $(SolutionDir)Redistributable\Framework /Y
-COPY $(SolutionDir)AppSoftware.LicenceEngine.KeyGenerator\bin\Release\AppSoftware.LicenceEngine.Common.xml $(SolutionDir)Redistributable\Framework /Y
-COPY $(SolutionDir)AppSoftware.LicenceEngine.KeyGenerator\bin\Release\AppSoftware.LicenceEngine.KeyGenerator.dll $(SolutionDir)Redistributable\Framework/Y
-COPY $(SolutionDir)AppSoftware.LicenceEngine.KeyGenerator\bin\Release\AppSoftware.LicenceEngine.KeyGenerator.xml $(SolutionDir)Redistributable\Framework /Y
-COPY $(SolutionDir)AppSoftware.LicenceEngine.KeyGenerator\bin\Release\AppSoftware.LicenceEngine.KeyVerification.dll $(SolutionDir)Redistributable\Framework /Y
-COPY $(SolutionDir)AppSoftware.LicenceEngine.KeyGenerator\bin\Release\AppSoftware.LicenceEngine.KeyVerification.xml $(SolutionDir)Redistributable\Framework /Y</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
