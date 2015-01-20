@@ -6,6 +6,8 @@ A common requirement for software vendors is the inclusion of a system for gener
 
 The .NET Licence Engine SDK implements a 'Partial Number Verification System', which along with other features, provides a defence against key generators which may be built to attempt to crack your licence key system.
 
+Credit to Brandon Staggs who wrote this article on implementing a partial number verification system in Delphi, from which this C# port borrows: http://www.brandonstaggs.com/2007/07/26/implementing-a-partial-serial-number-verification-system-in-delphi/ 
+
 ### Key benefits of implementing your licence system with the .NET Licence Key Generator are: ###
 
 No 'Phone Home' to verify licence keys is required.
