@@ -23,6 +23,8 @@ Simple to use SDK and sample projects included.
 
 **(Extended documentation below)**
 
+A sample project is included at: [project root]\Redistributable\Samples\Sample1.sln
+
 To generate a licence key we essentially need two things:
 
 A set of arbitrary 'key' bytes that are unique to the application that we want to protect. You are responsible for choosing a random set of bytes to use as your 'keys'
@@ -57,6 +59,8 @@ Simply put, .NET Licence Engine provides a mechanism for creating and verifying 
 The system is cracker resistant, as it does not require the client to verify the entire key, only a portion. It is impossible for an attacker to build a key generator from decompiling your executable code alone.
 
 ## 2. Including .NET Licence Engine in your Projects ##
+
+A sample project is included at: [project root]\Redistributable\Samples\Sample1.sln
 
 This wiki contains full documentation for use of .NET Licence Engine, however the interface is small, so you may want to jump straight to a simple client server example using the SDK.
 
