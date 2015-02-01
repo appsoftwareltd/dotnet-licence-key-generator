@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActivationKeyEncryption.cs" />
-    <Compile Include="ActivationKeyXmlWriter.cs" />
     <Compile Include="KeyByteSetComparer.cs" />
     <Compile Include="PkvLicenceKeyGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
