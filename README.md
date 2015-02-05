@@ -21,6 +21,29 @@ Light weight and fast code execution, tested up to 1,000,000 key generation and 
 Simple to use SDK and sample projects included.
 30 day free trial available.
 
+### Licence to use: ###
+
+Copyright (c) 2013 GitHub Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ### How it works ###
 
 **(Extended documentation below)**
@@ -37,17 +60,13 @@ With this system, you are able to vary the keys tested on new builds for publish
 
 You can vary the number of byte keys used to make longer, stronger keys. Your validation code will need to know how many keys were used in the generation of a key.
 
-.NET Licence Engine has been vigorously tested to provide you with a straight forward means of implementing strong licence key generation and verification functionality into your software.
-
-You can download now and use on a 30 day trial basis and integrate .NET Licence Engine into your application today.
-
-You should be aware that no distributed software can be protected 100% against crackers. Whatever the technique used to generate a licence key system, all distributed software has the potential to be decompiled and modified to that licence key verification is skipped entirely. Depending on the context in which you distribute your software, you may need to employ obfuscation and other security techniques to make this less likely. Our system provides a simple programming interface, that helps to create a user friendly, cracker resistant means of implementing licence key functionality in your application.
+Remember that no distributed software can be protected 100% against crackers. Whatever the technique used to generate a licence key system, all distributed software has the potential to be decompiled and modified to that licence key verification is skipped entirely. Depending on the context in which you distribute your software, you may need to employ obfuscation and other security techniques to make this less likely. Our system provides a simple programming interface, that helps to create a user friendly, cracker resistant means of implementing licence key functionality in your application.
 
 ## Terms of use ##
 
 App Software Ltd and our partners accept no liability for any loss or damage to physical property or intellectual property arising as a result of using our products.
 
-Users of our software, licenced or otherwise are expected to undertake their own thorough testing and assessment for suitability of our products before integrating with their solutions.
+Users of our software, licensed or otherwise are expected to undertake their own thorough testing and assessment for suitability of our products before integrating with their solutions.
 
 
 # Documentation #
