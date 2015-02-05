@@ -112,7 +112,7 @@ The `blackListedSeeds` allows you to pass an array of blacklisted seeds should y
 
 ### Licence to use: ###
 
-Copyright (c) 2013 GitHub Inc.
+Copyright (c) 2015 App Software Ltd.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
