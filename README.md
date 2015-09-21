@@ -1,4 +1,4 @@
-# .NET Licence Key Generator #
+# .NET Licence Key Generator
 
 ## Key Generation and Verification System component for Microsoft .NET applications (.NET 2.0 and above) ##
 
@@ -15,13 +15,13 @@ Ability to revoke licence keys if keys found to have been distributed without au
 Compiled key verification code cannot be fully reproduced to allow the creation of a key generator (keygen).
 Keys can be bound to a particular product version if required.
 
-### Additional benefits: ###
+### Additional benefits:
 
 Light weight and fast code execution, tested up to 1,000,000 key generation and verification cycles in 10.2 seconds.
 Simple to use SDK and sample projects included.
 30 day free trial available.
 
-### How it works ###
+### How it works
 
 **(Extended documentation below)**
 
@@ -39,16 +39,16 @@ You can vary the number of byte keys used to make longer, stronger keys. Your va
 
 Remember that no distributed software can be protected 100% against crackers. Whatever the technique used to generate a licence key system, all distributed software has the potential to be decompiled and modified to that licence key verification is skipped entirely. Depending on the context in which you distribute your software, you may need to employ obfuscation and other security techniques to make this less likely. Our system provides a simple programming interface, that helps to create a user friendly, cracker resistant means of implementing licence key functionality in your application.
 
-## Terms of use ##
+## Terms of use
 
 App Software Ltd and our partners accept no liability for any loss or damage to physical property or intellectual property arising as a result of using our products.
 
 Users of our software, licensed or otherwise are expected to undertake their own thorough testing and assessment for suitability of our products before integrating with their solutions.
 
 
-# Documentation #
+# Documentation
 
-## 1. An Introduction to .NET Licence Engine ##
+## 1. An Introduction to .NET Licence Engine
 
 .NET Licence Engine is an SDK that provides a simple and flexible Partial Key Verification implementation.
 
@@ -56,7 +56,7 @@ Simply put, .NET Licence Engine provides a mechanism for creating and verifying 
 
 The system is cracker resistant, as it does not require the client to verify the entire key, only a portion. It is impossible for an attacker to build a key generator from decompiling your executable code alone.
 
-## 2. Including .NET Licence Engine in your Projects ##
+## 2. Including .NET Licence Engine in your Projects
 
 A sample project is included at: [project root]\Redistributable\Samples\Sample1.sln
 
@@ -110,7 +110,7 @@ The `totalKeyByteSets` should be the same as the length of the full KeyByteSet a
 
 The `blackListedSeeds` allows you to pass an array of blacklisted seeds should you wish for example to bar any users for using a keys in their possession for future releases of your application.
 
-### Licence to use: ###
+### Licence to use:
 
 Copyright (c) 2015 App Software Ltd.
 
