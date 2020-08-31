@@ -1,8 +1,8 @@
 ﻿namespace AppSoftware.LicenceEngine.KeyVerification
 {
-    public enum PkvLicenceKeyResult
+    public enum PkvKeyVerificationResult
     {
-        KeyGood = 0,
+        KeyValid = 0,
         KeyInvalid = 1,
         KeyBlackListed = 2,
         KeyPhoney = 3

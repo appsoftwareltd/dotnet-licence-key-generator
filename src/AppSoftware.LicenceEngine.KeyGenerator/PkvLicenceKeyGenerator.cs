@@ -141,7 +141,7 @@ namespace AppSoftware.LicenceEngine.KeyGenerator
         /// <param name="b"></param>
         /// <param name="c"></param>
         /// <returns></returns>
-        private byte GetKeyByte(Int64 seed, byte a, byte b, byte c)
+        private byte GetKeyByte(long seed, byte a, byte b, byte c)
         {
             int aTemp = a % 25;
             int bTemp = b % 3;
