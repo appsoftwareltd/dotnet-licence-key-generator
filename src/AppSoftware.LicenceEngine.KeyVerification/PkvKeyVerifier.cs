@@ -1,13 +1,4 @@
-﻿#define Key01
-#undef Key02
-#undef Key03
-#undef Key04
-#undef Key05
-#undef Key06
-#define Key07
-#undef Key08
-
-using System;
+﻿using System;
 using AppSoftware.LicenceEngine.Common;
 
 namespace AppSoftware.LicenceEngine.KeyVerification
