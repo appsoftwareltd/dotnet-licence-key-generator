@@ -3,6 +3,8 @@
 
 # Application specific files
 
+nuget_push.bat
+
 # (Allow storage of dev / prod settings, to be copied to standard appsettings.secret.json, which is excluded)
 
 # appsettings.secret.*.json
