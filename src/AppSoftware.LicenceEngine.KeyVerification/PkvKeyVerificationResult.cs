@@ -2,8 +2,8 @@
 {
     public enum PkvKeyVerificationResult
     {
-        KeyValid = 0,
-        KeyInvalid = 1,
+        KeyIsValid = 0,
+        KeyIsInvalid = 1,
         KeyBlackListed = 2,
         KeyPhoney = 3
     }

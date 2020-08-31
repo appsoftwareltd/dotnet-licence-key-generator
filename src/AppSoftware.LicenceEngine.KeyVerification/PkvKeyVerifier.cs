@@ -25,7 +25,7 @@ namespace AppSoftware.LicenceEngine.KeyVerification
         {
             key = FormatKeyForCompare(key);
 
-            PkvKeyVerificationResult pkvKeyVerificationResult = PkvKeyVerificationResult.KeyInvalid;
+            PkvKeyVerificationResult pkvKeyVerificationResult = PkvKeyVerificationResult.KeyIsInvalid;
 
             bool checksumPass = CheckKeyChecksum(key, totalKeyByteSets);
 
@@ -108,7 +108,7 @@ namespace AppSoftware.LicenceEngine.KeyVerification
                             }
                         }
 
-                        pkvKeyVerificationResult = PkvKeyVerificationResult.KeyValid;
+                        pkvKeyVerificationResult = PkvKeyVerificationResult.KeyIsValid;
                     }
                 }
             }
