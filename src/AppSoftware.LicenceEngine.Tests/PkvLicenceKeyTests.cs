@@ -12,7 +12,7 @@ namespace AppSoftware.LicenceEngine.Tests
         [Test]
         public void TestPkvLicenceKeyGenerationAndVerification()
         {
-            var pkvLicenceKeyGenerator = new PkvLicenceKeyGenerator();
+            var pkvLicenceKeyGenerator = new PkvKeyGenerator();
 
             var pkvKeyVerifier = new PkvKeyVerifier();
 
@@ -99,7 +99,7 @@ namespace AppSoftware.LicenceEngine.Tests
         [Test]
         public void TestPkvLicenceKeyGenerationAndVerificationWithRandomKeyBytesKeyByteQtyAndVerificationKeyByteSelection()
         {
-            var pkvLicenceKeyGenerator = new PkvLicenceKeyGenerator();
+            var pkvLicenceKeyGenerator = new PkvKeyGenerator();
 
             var pkvKeyVerifier = new PkvKeyVerifier();
 
