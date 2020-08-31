@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\AppSoftware.LicenceEngine.KeyGenerator\AppSoftware.LicenceEngine.KeyGenerator.csproj" />
+    <PackageReference Include="AppSoftware.LicenceEngine.KeyGenerator" Version="1.2.1" />
   </ItemGroup>
 
 </Project>

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\AppSoftware.LicenceEngine.KeyVerification\AppSoftware.LicenceEngine.KeyVerification.csproj" />
+    <PackageReference Include="AppSoftware.LicenceEngine.KeyVerification" Version="1.2.1" />
   </ItemGroup>
 
 </Project>

@@ -29,10 +29,11 @@ namespace SampleKeyVerification
                 var pkvKeyVerifier = new PkvKeyVerifier();
 
                 var pkvKeyVerificationResult = pkvKeyVerifier.VerifyKey(
+
                     key: key?.Trim(),
                     keyByteSetsToVerify: keyByteSets,
 
-                    // The number of KeyByteSets used to generate the licence key in SampleKeyGenerator
+                    // The TOTAL number of KeyByteSets used to generate the licence key in SampleKeyGenerator
 
                     totalKeyByteSets: 8,
 

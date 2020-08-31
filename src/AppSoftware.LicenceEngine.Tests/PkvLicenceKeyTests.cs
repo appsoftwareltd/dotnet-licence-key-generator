@@ -59,7 +59,7 @@ namespace AppSoftware.LicenceEngine.Tests
                                             new[] { keyByteSet1, keyByteSet2, keyByteSet3 },
                                             keyByteSets.Length,
                                             null
-                                        ) == PkvKeyVerificationResult.KeyValid, "Failed on iteration " + i
+                                        ) == PkvKeyVerificationResult.KeyIsValid, "Failed on iteration " + i
                             );
 
                 // Check that erroneous check sum validation fails
@@ -72,27 +72,27 @@ namespace AppSoftware.LicenceEngine.Tests
             Assert.False(pkvKeyVerifier.VerifyKey("adcsadrewf",
                                             new[] { keyByteSet1, keyByteSet2 },
                                             keyByteSets.Length,
-                                            null) == PkvKeyVerificationResult.KeyValid
+                                            null) == PkvKeyVerificationResult.KeyIsValid
                         );
             Assert.False(pkvKeyVerifier.VerifyKey("",
                                             new[] { keyByteSet1, keyByteSet2 },
                                             keyByteSets.Length,
-                                            null) == PkvKeyVerificationResult.KeyValid
+                                            null) == PkvKeyVerificationResult.KeyIsValid
                         );
             Assert.False(pkvKeyVerifier.VerifyKey("123",
                                             new[] { keyByteSet1, keyByteSet2 },
                                             keyByteSets.Length,
-                                            null) == PkvKeyVerificationResult.KeyValid
+                                            null) == PkvKeyVerificationResult.KeyIsValid
                         );
             Assert.False(pkvKeyVerifier.VerifyKey("*()",
                                             new[] { keyByteSet1, keyByteSet2 },
                                             keyByteSets.Length,
-                                            null) == PkvKeyVerificationResult.KeyValid
+                                            null) == PkvKeyVerificationResult.KeyIsValid
                         );
             Assert.False(pkvKeyVerifier.VerifyKey("dasdasdasgdjwqidqiwd21887127eqwdaishxckjsabcxjkabskdcbq2e81y12e8712",
                                             new[] { keyByteSet1, keyByteSet2 },
                                             keyByteSets.Length,
-                                            null) == PkvKeyVerificationResult.KeyValid
+                                            null) == PkvKeyVerificationResult.KeyIsValid
                         );
         }
 
@@ -150,7 +150,7 @@ namespace AppSoftware.LicenceEngine.Tests
                                             new[] { keyByteSet1, keyByteSet2 },
                                             keyByteSets.Length,
                                             null
-                                        ) == PkvKeyVerificationResult.KeyValid, "Failed on iteration " + i
+                                        ) == PkvKeyVerificationResult.KeyIsValid, "Failed on iteration " + i
                             );
 
             }
