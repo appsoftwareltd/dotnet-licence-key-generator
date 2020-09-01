@@ -205,3 +205,11 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+### Sponsorship:
+
+This project is currently free open source distributed under the above licence.
+
+If you are using this project in commercial software, or including in software that is to be distributed we ask you to sponsor this organisation so that we can continue to maintain and develop it further. 
+
+<iframe src="https://github.com/sponsors/appsoftwareltd/card" title="Sponsor appsoftwareltd" height="225" width="600" style="border: 0;"></iframe>
