@@ -1,6 +1,6 @@
 # .NET Licence Key Generator
 
-## Key Generation and Verification System component for Microsoft .NET applications (.NET 2.0 and above) ##
+## Licence Key Generation and Verification System for .NET
 
 A common requirement for software vendors is the inclusion of a system for generating and verifying passwords, which can be bundled with distributed desktop software, or for granting access to online services. App Software's .NET Licence Key Generator provides a robust, lightweight and tested means of solving this problem.
 
