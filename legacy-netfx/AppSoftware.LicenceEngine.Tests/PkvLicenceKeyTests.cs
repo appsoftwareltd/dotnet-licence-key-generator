@@ -16,19 +16,18 @@ namespace AppSoftware.LicenceEngine.Tests
 
             var pkvKeyCheck = new PkvKeyCheck();
 
-            string key = String.Empty;
+            string key;
 
-            KeyByteSet[] keyByteSets = new []
-                                               {
-                                                   new KeyByteSet(1, 58, 6, 97),
-                                                   new KeyByteSet(2, 96, 254, 23),
-                                                   new KeyByteSet(3, 11, 185, 69), 
-                                                   new KeyByteSet(4, 2, 93, 41),
-                                                   new KeyByteSet(5, 62, 4, 234),
-                                                   new KeyByteSet(6, 200, 56, 49), 
-                                                   new KeyByteSet(7, 89, 45,142), 
-                                                   new KeyByteSet(8, 6, 88, 32)
-                                               };
+            KeyByteSet[] keyByteSets = {
+                                           new KeyByteSet(1, 58, 6, 97),
+                                           new KeyByteSet(2, 96, 254, 23),
+                                           new KeyByteSet(3, 11, 185, 69), 
+                                           new KeyByteSet(4, 2, 93, 41),
+                                           new KeyByteSet(5, 62, 4, 234),
+                                           new KeyByteSet(6, 200, 56, 49), 
+                                           new KeyByteSet(7, 89, 45,142), 
+                                           new KeyByteSet(8, 6, 88, 32)
+                                       };
 
             // Change these to a random key byte set from the above array to test key verification with
 
@@ -43,9 +42,11 @@ namespace AppSoftware.LicenceEngine.Tests
             KeyByteSet keyByteSet2 = new KeyByteSet(kbs2.KeyByteNo, kbs2.KeyByteA, kbs2.KeyByteB, kbs2.KeyByteC);
             KeyByteSet keyByteSet3 = new KeyByteSet(kbs3.KeyByteNo, kbs3.KeyByteA, kbs3.KeyByteB, kbs3.KeyByteC);
 
+            var random = new Random();
+
             for (int i = 0; i < 10000; i++)
             {
-                int seed = new Random().Next(0, Int32.MaxValue);
+                int seed = random.Next(0, int.MaxValue);
 
                 key = pkvLicenceKey.MakeKey(seed, keyByteSets);
 
@@ -104,6 +105,8 @@ namespace AppSoftware.LicenceEngine.Tests
 
             var pkvKeyCheck = new PkvKeyCheck();
 
+            var random = new Random();
+
             for (int i = 0; i < 10000; i++)
             {
                 int randomKeyByteSetsLength = new Random().Next(2, 400);
@@ -112,14 +115,12 @@ namespace AppSoftware.LicenceEngine.Tests
 
                 for (int j = 0; j < randomKeyByteSetsLength; j++)
                 {
-                    var random = new Random();
-
                     var kbs = new KeyByteSet
                                   (
                                       j + 1,
-                                      (byte)random.Next(0, 256),
-                                      (byte)random.Next(0, 256),
-                                      (byte)random.Next(0, 256)
+                                      (byte) random.Next(0, 256),
+                                      (byte) random.Next(0, 256),
+                                      (byte) random.Next(0, 256)
                                   );
 
                     keyByteSets[j] = kbs;
@@ -127,8 +128,8 @@ namespace AppSoftware.LicenceEngine.Tests
 
                 // Select a random key byte set to test key verification with
 
-                KeyByteSet kbs1 = keyByteSets[new Random().Next(0, randomKeyByteSetsLength)];
-                KeyByteSet kbs2 = keyByteSets[new Random().Next(0, randomKeyByteSetsLength)];
+                KeyByteSet kbs1 = keyByteSets[random.Next(0, randomKeyByteSetsLength)];
+                KeyByteSet kbs2 = keyByteSets[random.Next(0, randomKeyByteSetsLength)];
 
                 // The check project also uses a class called KeyByteSet, but with
                 // separate name spacing to achieve single self contained dll
@@ -136,7 +137,7 @@ namespace AppSoftware.LicenceEngine.Tests
                 KeyByteSet keyByteSet1 = new KeyByteSet(kbs1.KeyByteNo, kbs1.KeyByteA, kbs1.KeyByteB, kbs1.KeyByteC); // Change no to test others
                 KeyByteSet keyByteSet2 = new KeyByteSet(kbs2.KeyByteNo, kbs2.KeyByteA, kbs2.KeyByteB, kbs2.KeyByteC);
 
-                int seed = new Random().Next(0, Int32.MaxValue);
+                int seed = random.Next(0, int.MaxValue);
 
                 string key = pkvLicenceKey.MakeKey(seed, keyByteSets);
 
