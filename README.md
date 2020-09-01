@@ -8,6 +8,7 @@ A common requirement for software vendors is the inclusion of a system for gener
 
 Credit to Brandon Staggs who wrote this article on implementing a partial number verification system in Delphi, from which this C# port borrows: http://www.brandonstaggs.com/2007/07/26/implementing-a-partial-serial-number-verification-system-in-delphi/ 
 
+For support and consulting related to this project, contact mail@appsoftware.com
 
 ### Key benefits of implementing your licence system with the .NET Licence Key Generator are: ###
 
@@ -15,6 +16,17 @@ Credit to Brandon Staggs who wrote this article on implementing a partial number
 - Ability to revoke licence keys if keys found to have been distributed without authorisation.
 - Compiled key verification code cannot be fully reproduced to allow the creation of a key generator (keygen) as full key data is not required for verification.
 - Light weight and fast code execution, tested up to 1,000,000 key generation and verification cycles in 10.2 seconds.
+
+## Compatibility
+
+.NET Licence Key Generator targets .NET Standard 1.0. This means that this library can be used with:
+
+- .NET Core 1.0 +
+- .NET Framework 4.5 +
+
+For full .NET Standard implementation support see: https://docs.microsoft.com/en-us/dotnet/standard/net-standard
+
+Note: The legacy .NET Framework 2.0 version is retained in this repository under `/legacy-netfx` but be aware that the API was changed in the port to .NET standard, will vary significantly from the samples included below and will not be maintained going forward.
 
 ## Implementation
 
