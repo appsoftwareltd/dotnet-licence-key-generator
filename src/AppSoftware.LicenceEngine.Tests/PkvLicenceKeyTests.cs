@@ -19,14 +19,14 @@ namespace AppSoftware.LicenceEngine.Tests
             string key;
 
             KeyByteSet[] keyByteSets = {
-                                           new KeyByteSet(keyByteNo: 1, keyByteA: 58,  keyByteB: 6,   keyByteC: 97),
-                                           new KeyByteSet(keyByteNo: 2, keyByteA: 96,  keyByteB: 254, keyByteC: 23),
-                                           new KeyByteSet(keyByteNo: 3, keyByteA: 11,  keyByteB: 185, keyByteC: 69),
-                                           new KeyByteSet(keyByteNo: 4, keyByteA: 2,   keyByteB: 93,  keyByteC: 41),
-                                           new KeyByteSet(keyByteNo: 5, keyByteA: 62,  keyByteB: 4,   keyByteC: 234),
-                                           new KeyByteSet(keyByteNo: 6, keyByteA: 200, keyByteB: 56,  keyByteC: 49),
-                                           new KeyByteSet(keyByteNo: 7, keyByteA: 89,  keyByteB: 45,  keyByteC: 142),
-                                           new KeyByteSet(keyByteNo: 8, keyByteA: 6,   keyByteB: 88,  keyByteC: 32)
+                                           new KeyByteSet(keyByteNumber: 1, keyByteA: 58,  keyByteB: 6,   keyByteC: 97),
+                                           new KeyByteSet(keyByteNumber: 2, keyByteA: 96,  keyByteB: 254, keyByteC: 23),
+                                           new KeyByteSet(keyByteNumber: 3, keyByteA: 11,  keyByteB: 185, keyByteC: 69),
+                                           new KeyByteSet(keyByteNumber: 4, keyByteA: 2,   keyByteB: 93,  keyByteC: 41),
+                                           new KeyByteSet(keyByteNumber: 5, keyByteA: 62,  keyByteB: 4,   keyByteC: 234),
+                                           new KeyByteSet(keyByteNumber: 6, keyByteA: 200, keyByteB: 56,  keyByteC: 49),
+                                           new KeyByteSet(keyByteNumber: 7, keyByteA: 89,  keyByteB: 45,  keyByteC: 142),
+                                           new KeyByteSet(keyByteNumber: 8, keyByteA: 6,   keyByteB: 88,  keyByteC: 32)
                                        };
 
             // Change these to a random key byte set from the above array to test key verification with
@@ -38,9 +38,9 @@ namespace AppSoftware.LicenceEngine.Tests
             // The check project also uses a class called KeyByteSet, but with
             // separate name spacing to achieve single self contained dll
 
-            KeyByteSet keyByteSet1 = new KeyByteSet(kbs1.KeyByteNo, kbs1.KeyByteA, kbs1.KeyByteB, kbs1.KeyByteC); // Change no to test others
-            KeyByteSet keyByteSet2 = new KeyByteSet(kbs2.KeyByteNo, kbs2.KeyByteA, kbs2.KeyByteB, kbs2.KeyByteC);
-            KeyByteSet keyByteSet3 = new KeyByteSet(kbs3.KeyByteNo, kbs3.KeyByteA, kbs3.KeyByteB, kbs3.KeyByteC);
+            KeyByteSet keyByteSet1 = new KeyByteSet(kbs1.KeyByteNumber, kbs1.KeyByteA, kbs1.KeyByteB, kbs1.KeyByteC); // Change no to test others
+            KeyByteSet keyByteSet2 = new KeyByteSet(kbs2.KeyByteNumber, kbs2.KeyByteA, kbs2.KeyByteB, kbs2.KeyByteC);
+            KeyByteSet keyByteSet3 = new KeyByteSet(kbs3.KeyByteNumber, kbs3.KeyByteA, kbs3.KeyByteB, kbs3.KeyByteC);
 
             for (int i = 0; i < 10000; i++)
             {
@@ -132,8 +132,8 @@ namespace AppSoftware.LicenceEngine.Tests
                 // The check project also uses a class called KeyByteSet, but with
                 // separate name spacing to achieve single self contained dll
 
-                KeyByteSet keyByteSet1 = new KeyByteSet(kbs1.KeyByteNo, kbs1.KeyByteA, kbs1.KeyByteB, kbs1.KeyByteC); // Change no to test others
-                KeyByteSet keyByteSet2 = new KeyByteSet(kbs2.KeyByteNo, kbs2.KeyByteA, kbs2.KeyByteB, kbs2.KeyByteC);
+                KeyByteSet keyByteSet1 = new KeyByteSet(kbs1.KeyByteNumber, kbs1.KeyByteA, kbs1.KeyByteB, kbs1.KeyByteC); // Change no to test others
+                KeyByteSet keyByteSet2 = new KeyByteSet(kbs2.KeyByteNumber, kbs2.KeyByteA, kbs2.KeyByteB, kbs2.KeyByteC);
 
                 int seed = new Random().Next(0, int.MaxValue);
 

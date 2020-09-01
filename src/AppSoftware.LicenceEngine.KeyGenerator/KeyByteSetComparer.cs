@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using AppSoftware.LicenceEngine.Common;
 
 namespace AppSoftware.LicenceEngine.KeyGenerator
@@ -7,15 +8,25 @@ namespace AppSoftware.LicenceEngine.KeyGenerator
     {
         public int Compare(object x, object y)
         {
-            KeyByteSet kbs1 = (KeyByteSet) x;
-            KeyByteSet kbs2 = (KeyByteSet) y;
+            var keyByteSetX = (KeyByteSet) x;
+            var keyByteSetY = (KeyByteSet) y;
 
-            if (kbs1.KeyByteNo > kbs2.KeyByteNo)
+            if (keyByteSetX == null)
+            {
+                throw new ArgumentNullException(nameof(keyByteSetX));
+            }
+
+            if (keyByteSetY == null)
+            {
+                throw new ArgumentNullException(nameof(keyByteSetY));
+            }
+
+            if (keyByteSetX.KeyByteNumber > keyByteSetY.KeyByteNumber)
             {
                 return 1;
             }
 
-            if (kbs1.KeyByteNo < kbs2.KeyByteNo)
+            if (keyByteSetX.KeyByteNumber < keyByteSetY.KeyByteNumber)
             {
                 return -1;
             }

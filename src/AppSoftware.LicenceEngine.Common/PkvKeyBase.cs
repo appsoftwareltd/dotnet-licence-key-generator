@@ -4,11 +4,6 @@ namespace AppSoftware.LicenceEngine.Common
 {
     public class PkvKeyBase
     {
-        ////////////////////////////////////////////////////
-        // Code below from here is duplicated across both
-        // private and public projects / dlls
-        ////////////////////////////////////////////////////
-
         /// <summary>
         /// Strip padding chars for comparison
         /// </summary>

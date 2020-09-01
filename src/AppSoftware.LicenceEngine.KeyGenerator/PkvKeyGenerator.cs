@@ -19,15 +19,9 @@ using AppSoftware.LicenceEngine.Common;
 
 namespace AppSoftware.LicenceEngine.KeyGenerator
 {
-    // Note - The generator function must never be compiled into the 
-    // application - as this contains all the key byte generation code needed
-    // to create the complete key.
-
-    // "Important: never compile this valid key generator function into your release 
-    // application! It is only to be used on your end to generate valid keys. 
-    // The success of a PKVS is based on keeping the parameters used in the PKV_GetKeyByte
-    // call secret and away from the prying eyes of crackers.  Remember: if it’s in your 
-    // compiled executable, an attacker can see it!
+    // Note - The AppSoftware.LicenceEngine.KeyGenerator package should not be referenced in the protected
+    // application. This is to make it as difficult as possible for an attacker to discover the mechanism required
+    // to create a keygen.
 
     public class PkvKeyGenerator : PkvKeyBase
     {
@@ -50,38 +44,38 @@ namespace AppSoftware.LicenceEngine.KeyGenerator
 
             Array.Sort(keyByteSets, new KeyByteSetComparer());
 
-            bool allKeyByteNosDistinct = true;
+            bool allKeyByteNumbersDistinct = true;
 
             var keyByteCheckedNos = new List<int>();
 
-            int maxKeyByteNo = 0;
+            int maxKeyByteNumber = 0;
 
             foreach (var keyByteSet in keyByteSets)
             {
-                if (!(keyByteCheckedNos.Contains(keyByteSet.KeyByteNo)))
+                if (!(keyByteCheckedNos.Contains(keyByteSet.KeyByteNumber)))
                 {
-                    keyByteCheckedNos.Add(keyByteSet.KeyByteNo);
+                    keyByteCheckedNos.Add(keyByteSet.KeyByteNumber);
 
-                    if (keyByteSet.KeyByteNo > maxKeyByteNo)
+                    if (keyByteSet.KeyByteNumber > maxKeyByteNumber)
                     {
-                        maxKeyByteNo = keyByteSet.KeyByteNo;
+                        maxKeyByteNumber = keyByteSet.KeyByteNumber;
                     }
                 }
                 else
                 {
-                    allKeyByteNosDistinct = false;
+                    allKeyByteNumbersDistinct = false;
                     break;
                 }
             }
 
-            if (!allKeyByteNosDistinct)
+            if (!allKeyByteNumbersDistinct)
             {
-                throw new InvalidOperationException("The KeyByteSet array contained at least 1 item with a duplicate KeyByteNo value.");
+                throw new InvalidOperationException("The KeyByteSet array contained at least 1 item with a duplicate KeyByteNumber value.");
             }
 
-            if (maxKeyByteNo != keyByteSets.Length)
+            if (maxKeyByteNumber != keyByteSets.Length)
             {
-                throw new InvalidOperationException("The values for KeyByteNo in each KeyByteSet item must be sequential and start with the number 1.");
+                throw new InvalidOperationException("The values for KeyByteNumber in each KeyByteSet item must be sequential and start with the number 1.");
             }
 
             // Note these seed value, with random numbers need to be repeated in check function.
