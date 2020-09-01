@@ -1,12 +1,10 @@
 # .NET Licence Key Generator
 
-## Licence Key Generation and Verification System for .NET
+## Licence Key Generation and Verification for .NET
 
 A common requirement for software vendors is the inclusion of a system for generating and verifying passwords, which can be bundled with distributed desktop software, or for granting access to online services. App Software's .NET Licence Key Generator provides a robust, lightweight and tested means of solving this problem.
 
 .NET Licence Key Generator implements a 'Partial Number Verification System', which along with other features, provides a defence against key generators which may be built to attempt to crack your licence key system.
-
-Credit to Brandon Staggs who wrote this article on implementing a partial number verification system in Delphi, from which this C# port borrows: http://www.brandonstaggs.com/2007/07/26/implementing-a-partial-serial-number-verification-system-in-delphi/ 
 
 For support and consulting related to this project, contact mail@appsoftware.com
 
@@ -194,11 +192,9 @@ App Software Ltd and our partners accept no liability for any loss or damage to 
 
 Users of our software, licensed or otherwise are expected to undertake their own thorough testing and assessment for suitability of our products before integrating with their solutions.
 
-
-
 ### Licence:
 
-Copyright © 2016 http://appsoftware.com
+Copyright © 2020 http://www.appsoftware.com
 Released under the Creative Commons Attribution 2.0 UK: England & Wales license:
 [https://creativecommons.org/licenses/by/2.0/uk/](https://creativecommons.org/licenses/by/2.0/uk/)
 
