@@ -192,6 +192,18 @@ App Software Ltd and our partners accept no liability for any loss or damage to 
 
 Users of our software, licensed or otherwise are expected to undertake their own thorough testing and assessment for suitability of our products before integrating with their solutions.
 
+### Funding and Sponsorship:
+
+This project is currently free open source distributed under the below licence.
+
+If you are using this project within or on behalf of a for profit commercial organisation, or including in software that is to be redistributed we ask you to sponsor this organisation so that we can continue to maintain and develop it further. 
+
+Sponsorship can be set up via GitHub sponsors:
+
+https://github.com/sponsors/appsoftwareltd
+
+Thank you, your support is greatly appreciated!
+
 ### Licence:
 
 Copyright © 2020 http://www.appsoftware.com
@@ -206,14 +218,4 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Sponsorship:
 
-This project is currently free open source distributed under the above licence.
-
-If you are using this project in commercial software, or including in software that is to be distributed we ask you to sponsor this organisation so that we can continue to maintain and develop it further. 
-
-Sponsorship can be set up via GitHub sponsors:
-
-https://github.com/sponsors/appsoftwareltd
-
-Thank you, your support is greatly appreciated!
