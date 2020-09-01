@@ -50,7 +50,7 @@ Sample code is included in this repository under ```/samples```
 
 A full sample application for generating licence keys is as follows:
 
-```
+```csharp
 using System;
 using AppSoftware.LicenceEngine.Common;
 using AppSoftware.LicenceEngine.KeyGenerator;
@@ -113,7 +113,7 @@ namespace SampleKeyGenerator
 
 Verifying the licence key generated in the above sample code can be achieved as below:
 
-```
+```csharp
 using System;
 using AppSoftware.LicenceEngine.Common;
 using AppSoftware.LicenceEngine.KeyVerification;
