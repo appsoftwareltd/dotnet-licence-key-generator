@@ -88,9 +88,9 @@ namespace SampleKeyGenerator
 
                 // Generate the key ... 
 
-                var pkvLicenceKeyGenerator = new PkvKeyGenerator();
+                var pkvKeyGenerator = new PkvKeyGenerator();
 
-                string licenceKey = pkvLicenceKeyGenerator.MakeKey(seed, keyByteSets);
+                string licenceKey = pkvKeyGenerator.MakeKey(seed, keyByteSets);
 
                 Console.WriteLine("Generated licence key is:");
                 Console.WriteLine(licenceKey);
