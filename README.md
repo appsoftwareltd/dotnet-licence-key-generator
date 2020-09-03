@@ -196,7 +196,7 @@ Users of our software, licensed or otherwise are expected to undertake their own
 
 This project is currently free open source distributed under the below licence.
 
-If you are using this project within or on behalf of a for profit commercial organisation, or including in software that is to be redistributed we ask you to sponsor this organisation so that we can continue to maintain and develop it further. 
+**If you are using this project within or on behalf of a for-profit commercial organisation, or including in software that is to be redistributed we ask you to sponsor this organisation so that we can continue to maintain and develop this and other open source projects further.** 
 
 Sponsorship can be set up via GitHub sponsors:
 
