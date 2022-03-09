@@ -1,5 +1,7 @@
 # .NET Licence Key Generator
 
+*_For bespoke software development and consulting email mail@appsoftware.com_*
+
 ## Licence Key Generation and Verification for .NET
 
 A common requirement for software vendors is the inclusion of a system for generating and verifying passwords, which can be bundled with distributed desktop software, or for granting access to online services. App Software's .NET Licence Key Generator provides a robust, lightweight and tested means of solving this problem.
